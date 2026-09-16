@@ -212,13 +212,25 @@ nav {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.logo-text {
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--primary);
-  letter-spacing: -0.5px;
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 
 .logo span {
@@ -850,7 +862,20 @@ footer {
 .footer-brand .logo {
   color: var(--white);
   margin-bottom: 16px;
-  display: inline-flex;
+}
+
+.footer-brand .logo-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-brand .logo-text {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.footer-brand .logo span {
+  color: var(--accent);
 }
 
 .footer-brand p {
@@ -1007,6 +1032,15 @@ footer {
   .footer-brand .logo {
     justify-content: center;
   }
+  
+  .footer-brand .logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .footer-brand .logo-text {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1029,6 +1063,15 @@ footer {
   
   .mobile-menu-btn {
     display: block;
+  }
+  
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
   }
   
   .hero {
